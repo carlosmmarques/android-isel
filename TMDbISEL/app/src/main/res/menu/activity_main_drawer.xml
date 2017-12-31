@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/now_playing"
+            android:checked="true"
+            android:icon="@android:drawable/ic_media_play"
+            android:title="@string/title_now_playing"/>
+        <item
+            android:id="@+id/upcoming"
+            android:icon="@android:drawable/ic_media_next"
+            android:title="@string/title_upcoming"/>
+        <item
+            android:id="@+id/most_popular"
+            android:icon="@android:drawable/star_on"
+            android:title="@string/title_most_popular"/>
+
+    </group>
+
+</menu>

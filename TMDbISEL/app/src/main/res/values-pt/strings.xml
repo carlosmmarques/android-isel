@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TMDbISEL</string>
+    <string name="movies_title">Filmes</string>
+    <string name="title_movie_detail">Detalhe de Filme</string>
+    <string name="title_activity_settings">Configurações</string>
+    <string name="settings_misc">Misc</string>
+    <string name="am_msg_tap_twice">Toque duas vezes para sair.</string>
+    <string name="action_settings">Definições</string>
+    <string name="clear_cache">Limpar Cache</string>
+    <string name="clear_cache_message">A cache foi limpa com sucesso.</string>
+    <string name="clear_db">Limpar Base Dados</string>
+    <string name="settings_saved_message">Configurações guardadas com sucesso.</string>
+    <string name="action_about">Sobre</string>
+    <string name="no_conectivity_wrn">Sem acessos web!</string>
+    <string name="not_wifi_wrn">Sem wifi! Cuidado com custos!</string>
+    <string name="title_now_playing">Em exibição</string>
+    <string name="title_upcoming">Brevemente</string>
+    <string name="title_most_popular">Mais populares</string>
+    <string name="title_search">Procurar</string>
+    <string name="about_description">Trabalho de PDM do curso LEIC do ISEL - Semestre Inverno
+        2015/2016\n\nDesenvolvido pelo grupo 4:\n24358 Raul Costa\n25993 Carlos Marques\n37325 Rui
+        Corveira\n\nÉ usada a API do TMDB:</string>
+    <string name="vote_average">Média de Votos</string>
+
+
+    <string name="AppTitle">TMDb ISEL</string>
+    <string name="movie_detail_overview">Descrição</string>
+    <string name="movie_detail_title">Título</string>
+    <string name="clear_settings">Limpar definições</string>
+    <string name="loading">Por favor aguarde…</string>
+    <string name="pref_cacheCategory_title">Cache (reserva)</string>
+    <string name="pref_dataMem_dialog_msg">Máximo permitido</string>
+    <string name="pref_dataMem_summary">Valor atual é 9999 KiB</string>
+    <string name="pref_dataMem_title">Memória para dados</string>
+    <string name="pref_imgMem_dialog_msg">Máximo permitido</string>
+    <string name="pref_imgMem_summary">Valor atual é 9999 KiB</string>
+    <string name="pref_imgMem_title">Memória para imagens</string>
+    <string name="pref_notify_summary">Permitir alertas para estreias de filmes</string>
+    <string name="pref_notify_title">Permitir notificações</string>
+    <string name="pref_syncCategory_title">Sincronização (com dados móveis)</string>
+    <string name="pref_syncFreq_summary">Cada 9999 hora(s)</string>
+    <string name="pref_syncFreq_title">Frequência</string>
+    <string name="pref_unit_size">KiB</string>
+    <string name="pref_wifiSync_summary">Bloquear dados móveis</string>
+    <string name="pref_wifiSync_title">Apenas Wi-Fi</string>
+    <string name="search">Procurar</string>
+    <string name="slider_diskcache_title">Cache de disco</string>
+    <string name="slider_enableupdatestitle">Permitir Atualizações</string>
+    <string name="slider_memorycache_title">Cache de memória</string>
+    <string name="wifionly_summary">Atualizar apenas quando ligada a redes Wi-Fi</string>
+    <string name="wifionly_title">Apenas Wi-Fi</string>
+    <string name="slider_message">Maior o valor melhor a experiência de utilização.</string>
+    <string name="slider_summary">Valor atual é $1 KiB</string>
+    <string name="reviews_label"><u>Comentários</u></string>
+    <string name="author_label">Autor: </string>
+    <string name="content_label">Opinião: </string>
+    <string name="synFreqEntry1">1 hora</string>
+    <string name="synFreqEntry2">4 horas</string>
+    <string name="synFreqEntry3">8 horas</string>
+    <string name="synFreqEntry4">12 horas</string>
+    <string name="synFreqEntry5">24 horas</string>
+    <string name="synFreqEntry6">48 horas</string>
+    <string name="original_language_label">Língua de origem:</string>
+    <string name="release_date_label">Data de estreia:</string>
+    <string name="popularity_label">Popularidade:</string>
+    <string name="vote_average_label">Média de votos:</string>
+    <string name="homepage_label">Homepage:</string>
+    <string name="production_companies_label">Produtoras:</string>
+
+</resources>

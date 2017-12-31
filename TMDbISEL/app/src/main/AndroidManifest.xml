@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pt.isel.pdm.li51n.g4.tmdbisel"
+    android:revisionCode="1"
+    android:versionName="0.1.0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".TMDbISELApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/tmdbisel"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TMDbISELTheme">
+        <activity
+            android:name=".presentation.MovieListActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".presentation.MoviePagerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".presentation.MovieListActivity" />
+        </activity>
+        <activity
+            android:name=".presentation.settings.SettingsActivity"
+            android:label="@string/title_activity_settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".presentation.about.AboutActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <service
+            android:name=".services.SyncService"
+            android:exported="false">
+        </service>
+        <service
+            android:name=".services.MovieCollectionRefresherService"
+            android:exported="false">
+        </service>
+        <service
+            android:name=".services.MovieRefresherService"
+            android:exported="false">
+        </service>
+        <service
+            android:name=".services.MovieReviewsRefresherService"
+            android:exported="false">
+        </service>
+        <service
+            android:name=".services.ImageService"
+            android:exported="false">
+        </service>
+        <receiver
+            android:name=".services.AlarmReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="AlarmReceiver" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".services.ConnectionChangedReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name=".sharedPrefs.Wifi" />
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name=".data.provider.TMDbDB.MoviesProvider"
+            android:authorities="pt.isel.pdm.li51n.g4.tmdbisel.tmdbdb"
+            android:exported="false"
+            android:grantUriPermissions="true">
+        </provider>
+        <activity
+            android:name=".presentation.splashScreen.SplashscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

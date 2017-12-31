@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string-array name="pref_syncFreq_entries">
+        <item>@string/synFreqEntry1</item>
+        <item>@string/synFreqEntry2</item>
+        <item>@string/synFreqEntry3</item>
+        <item>@string/synFreqEntry4</item>
+        <item>@string/synFreqEntry5</item>
+        <item>@string/synFreqEntry6</item>
+    </string-array>
+    <string-array name="pref_syncFreq_values" tools:ignore="MissingTranslation">
+        <item>60</item>
+        <item>240</item>
+        <item>480</item>
+        <item>720</item>
+        <item>1440</item>
+        <item>2880</item>
+    </string-array>
+
+    <string name="synFreqEntry6">48 hours</string>
+    <string name="synFreqEntry1">1 hour</string>
+    <string name="synFreqEntry2">4 hours</string>
+    <string name="synFreqEntry3">8 hours</string>
+    <string name="synFreqEntry4">12 hours</string>
+    <string name="synFreqEntry5">24 hours</string>
+</resources>

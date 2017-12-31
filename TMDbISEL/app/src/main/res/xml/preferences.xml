@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/pref_notify_key"
+        android:summary="@string/pref_notify_summary"
+        android:title="@string/pref_notify_title" />
+    <PreferenceCategory
+        android:key="pref_syncCategory"
+        android:title="@string/pref_syncCategory_title">
+        <ListPreference
+            android:defaultValue="1440"
+            android:entries="@array/pref_syncFreq_entries"
+            android:entryValues="@array/pref_syncFreq_values"
+            android:key="@string/pref_syncFreq_key"
+            android:summary="@string/pref_syncFreq_summary"
+            android:title="@string/pref_syncFreq_title" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_wifiSync_key"
+            android:summary="@string/pref_wifiSync_summary"
+            android:title="@string/pref_wifiSync_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_cacheCategory"
+        android:title="@string/pref_cacheCategory_title">
+        <pt.isel.pdm.li51n.g4.tmdbisel.presentation.settings.SeekBarPreference
+            android:defaultValue="1024"
+            android:dialogMessage="@string/pref_imgMem_dialog_msg"
+            android:key="@string/pref_imgMem_key"
+            android:max="4096"
+            android:summary="@string/pref_imgMem_summary"
+            android:text="@string/pref_unit_size"
+            android:title="@string/pref_imgMem_title" />
+        <pt.isel.pdm.li51n.g4.tmdbisel.presentation.settings.SeekBarPreference
+            android:defaultValue="1024"
+            android:dialogMessage="@string/pref_dataMem_dialog_msg"
+            android:key="@string/pref_dataMem_key"
+            android:max="2048"
+            android:summary="@string/pref_dataMem_summary"
+            android:text="@string/pref_unit_size"
+            android:title="@string/pref_dataMem_title" />
+    </PreferenceCategory>
+</PreferenceScreen>
