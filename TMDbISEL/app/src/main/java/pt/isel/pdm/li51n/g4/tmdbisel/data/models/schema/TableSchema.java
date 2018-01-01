@@ -156,6 +156,11 @@ public class TableSchema<T> {
             }
 
             if (!firstField) {
+                String currQuery = queryBuilder.toString();
+                // trim trailing ", " sequences:
+                if (currQuery.lastIndexOf(", ") ==  currQuery.length()-2 )
+                    queryBuilder.setLength(currQuery.length()-2);
+                else
                 queryBuilder.append(", ");
             }
 
