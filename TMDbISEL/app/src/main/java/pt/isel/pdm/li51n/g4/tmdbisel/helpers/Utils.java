@@ -189,6 +189,10 @@ public class Utils {
             Annotation annotation = valueObjField.getAnnotation(Attributes.class);
             Attributes attr = (Attributes) annotation;
 
+            // hack because of Android's Instant Run functionality:
+            if (valueObjField.getName().equals("$change"))
+                continue;
+
             if (attr != null && attr.notMapped()) {
                 continue;
             }
